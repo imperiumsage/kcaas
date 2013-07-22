@@ -1,0 +1,1 @@
+curl -H "X-secretKey: 1q2w3e#" -X POST "http://localhost:5000/providers/matic" -d "trending=Carry On"

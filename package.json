@@ -3,7 +3,10 @@
   "version": "0.0.1",
   "dependencies": {
     "express": "3.1.x",
-    "sanitizer": "latest"
+    "sanitizer": "latest",
+    "jade": "latest",
+    "mongoose": "latest",
+    "moment": "latest"
   },
   "engines": {
     "node": "0.10.x",

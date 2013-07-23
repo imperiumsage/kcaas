@@ -1,14 +1,30 @@
-p.content {
-	text-align:center;
-	font-family: 'Cabin', sans-serif;
-	text-transform:uppercase;
-	font-size: xx-large;
-	color: white;
-	background-color: red;
-	margin-left: auto ;
-	margin-right: auto ;
-} 
+/* This parent can be any width and height */
+div.block {
+  text-align: center;
+}
 
-p.content > span {
+/* The ghost, nudged to maintain perfect centering */
+div.block:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: top;
+  margin-right: -0.25em; /* Adjusts for spacing */
+}
+
+/* The element to be centered, can
+   also be of any width and height */
+p.centered {
+  display: inline-block;
+  vertical-align: top;
+  font-family: 'Cabin', sans-serif;
+  text-transform:uppercase;
+  font-size: xx-large;
+  color: white;
+  background-color: red;
+}
+
+p.centered > span {
 	font-size: small;
 }
+

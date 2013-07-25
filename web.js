@@ -61,10 +61,9 @@ app.get('/trending/:provider',function(req,res){
 
 });
 
+//stupid auth
 function authentication_required(req, res, next){
-    //console.log(JSON.stringify(req.headers));
-    if(req.headers["x-secretkey"] === "1q2w3e#") {
-      //res.send("success!");
+    if(req.headers["x-secretkey"] === "insert-secret-here") {
       next();
     } else {
       res.send("Forbidden!");
